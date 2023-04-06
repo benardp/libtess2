@@ -33,4 +33,4 @@ install(TARGETS libtess2 EXPORT libtess2-targets)
 
 install(EXPORT libtess2-targets DESTINATION share/libtess2/)
 
-install(FILES ${LIBTESS2_INCLUDES} DESTINATION include/libtess2)
+install(FILES ${LIBTESS2_INCLUDE} DESTINATION include/libtess2)
