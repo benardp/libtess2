@@ -22,11 +22,7 @@ set(LIBTESS2_SOURCE
 	Source/tess.h
 )
 
-if (WIN32) {
-	add_library(libtess2 STATIC ${LIBTESS2_SOURCE} ${LIBTESS2_INCLUDE})
-} else {
-	add_library(libtess2 ${LIBTESS2_SOURCE} ${LIBTESS2_INCLUDE})
-}
+add_library(libtess2 STATIC ${LIBTESS2_SOURCE} ${LIBTESS2_INCLUDE})
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Include)
 
